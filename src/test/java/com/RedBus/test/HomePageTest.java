@@ -32,7 +32,7 @@ public class HomePageTest extends BaseTest {
 		log.info("Verify the title for Test Case 2");
 		HomePage homepage = new HomePage (driver);
 		homepage.clickOnRideButton();
-		Assert.assertFalse(driver.getTitle().contains("Ryde: Car Rentals"));
+		Assert.assertTrue(driver.getTitle().contains("Ryde: Car Rentals"));
 		log.info(driver.getTitle() + "Get the title");
 	}
 
